@@ -29,7 +29,8 @@ namespace MenuSystem
 
                 }
                 Console.WriteLine("\n(Tryk menupunkt eller 0 for at afslutte)");
-                
+
+                SelectMenuItem(Convert.ToInt32(Console.ReadKey()));
                 Console.ReadKey();
                 Console.Clear();
             }
@@ -41,6 +42,20 @@ namespace MenuSystem
             MenuItems[num] = mi;
             ItemCount++;
         }
+        public int SelectMenuItem(int itemNum)
+        {
 
+            if (itemNum <= 0)
+            {
+                itemNum = 0;
+            }
+            if (itemNum >= ItemCount)
+            {
+                itemNum = ItemCount;
+            }
+
+            return itemNum;
+
+        }
     }
 }
