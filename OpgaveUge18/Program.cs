@@ -36,7 +36,7 @@ namespace MenuSystem
             mainMenu.ItemCount++;
 
             mainMenu.Show();
-
+            Console.WriteLine("Loving it");
             Console.ReadLine();
         }
 
