@@ -30,9 +30,11 @@ namespace MenuSystem
                 }
                 Console.WriteLine("\n(Tryk menupunkt eller 0 for at afslutte)");
 
-                SelectMenuItem(Convert.ToInt32(Console.ReadKey()));
-                Console.ReadKey();
+                ItemCount = SelectMenuItem(Convert.ToInt32(Console.ReadLine()));
+
+                //ItemCount = SelectMenuItem(1);
                 Console.Clear();
+                break;
             }
 
         }
