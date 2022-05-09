@@ -35,8 +35,13 @@ namespace MenuSystem
             mainMenu.MenuItems[3] = mi;
             mainMenu.ItemCount++;
 
+            mainMenu.AddMenuItem("5. Title Test", 4);
+            mainMenu.AddMenuItem("6. Title Test2", 5);
+            mainMenu.AddMenuItem("7. Title Test3", 6);
+            mainMenu.AddMenuItem("8. Title Test4", 7);
+
             mainMenu.Show();
-            Console.WriteLine("Loving it");
+
             Console.ReadLine();
         }
 

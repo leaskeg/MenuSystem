@@ -30,13 +30,24 @@ namespace MenuSystem
             }
 
         }
-        public void AddMenuItem()
+        public void AddMenuItem(string TitleTest, int num)
         {
-            MenuItems[0] = new MenuItem { };
+            /*mi = new MenuItem();
+            mi.Title = "4. Få svaret på livet, universet og alting";
+            mainMenu.MenuItems[3] = mi;
+            mainMenu.ItemCount++;
+            */
+            MenuItem mi = new MenuItem();
+            mi.Title = TitleTest;
+            MenuItems[num] = mi;
+            ItemCount++;
+
+            /*ItemCount++;
+            MenuItem mi = new MenuItem();
+            Title = TitleTest;
+            
+            MenuItems[num] = new MenuItem { };*/
         }
-        public Menu()
-        {
-                
-        }
+
     }
 }
