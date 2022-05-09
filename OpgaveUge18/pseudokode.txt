@@ -1,6 +1,6 @@
 ﻿Opret instance af Menu som hedder "mainMenu" med titlen "Min fantastiske menu"
 
-		Menu()
+		class Menu()
 			string title
 			int ItemCount = 0
 			menuItem[10]
@@ -21,12 +21,15 @@
 				hvis itemNum =< 0 så skal itemNum = 0
 				hvis itemNum => itemCount , så bliver itemNum = itemCount
 				så retunes itemNum
-			
+
+		class MenuItem()
+				constructor MenuItem(itemTitle)
+				Title skal være ligmed itemTitle
 
 Loop1 start
 Kør metoden "AddMenuItem" som tager Titlen som parameter.
-	
 
+Hulla
 
 
 
