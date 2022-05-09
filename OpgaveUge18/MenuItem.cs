@@ -9,9 +9,9 @@ namespace MenuSystem
     public class MenuItem
     {
         public string Title;
-        public MenuItem()
+        public MenuItem(string itemTitle)
         {
-            string itemTitle;
+            Title = itemTitle;
         }
     }
 

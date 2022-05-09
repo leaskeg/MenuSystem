@@ -6,39 +6,20 @@ namespace MenuSystem
     {
         static void Main(string[] args)
         {
-            Menu mainMenu = new Menu();
+            Menu mainMenu = new Menu("Min fantastiske menu");
 
-            mainMenu.Title = "Min fantastiske menu";
+            //mainMenu.Title = "Min fantastiske menu";
             mainMenu.MenuItems = new MenuItem[10];
 
-            // First menu item
-            MenuItem mi = new MenuItem();
-            mi.Title = "1. Gør dit";
-            mainMenu.MenuItems[0] = mi;
-            mainMenu.ItemCount++; // Increment with one; same as: ItemCount = ItemCount + 1
 
-            // Second menu item
-            mi = new MenuItem();
-            mi.Title = "2. Gør dat";
-            mainMenu.MenuItems[1] = mi;
-            mainMenu.ItemCount++;
+            mainMenu.AddMenuItem("1. Gør dit", 0);
 
-            // Third menu item
-            mi = new MenuItem();
-            mi.Title = "3. Gør noget";
-            mainMenu.MenuItems[2] = mi;
-            mainMenu.ItemCount++;
+            mainMenu.AddMenuItem("2. Gør dat", 1);
 
-            // Last menu item
-            mi = new MenuItem();
-            mi.Title = "4. Få svaret på livet, universet og alting";
-            mainMenu.MenuItems[3] = mi;
-            mainMenu.ItemCount++;
+            mainMenu.AddMenuItem("3. Gør noget", 2);
 
-            mainMenu.AddMenuItem("5. Title Test", 4);
-            mainMenu.AddMenuItem("6. Title Test2", 5);
-            mainMenu.AddMenuItem("7. Title Test3", 6);
-            mainMenu.AddMenuItem("8. Title Test4", 7);
+            mainMenu.AddMenuItem("4. Få svaret på livet, universet og alting", 3);
+
 
             mainMenu.Show();
 

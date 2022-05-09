@@ -11,7 +11,12 @@ namespace MenuSystem
         public string Title { get; set; }
         public int ItemCount = 0;
         public MenuItem[] MenuItems = new MenuItem[10];
-       
+
+        public Menu(string titleMenu)
+        {
+            Title = titleMenu;
+        }
+
         public void Show()
         {
             while (true)
@@ -32,21 +37,9 @@ namespace MenuSystem
         }
         public void AddMenuItem(string TitleTest, int num)
         {
-            /*mi = new MenuItem();
-            mi.Title = "4. Få svaret på livet, universet og alting";
-            mainMenu.MenuItems[3] = mi;
-            mainMenu.ItemCount++;
-            */
-            MenuItem mi = new MenuItem();
-            mi.Title = TitleTest;
+            MenuItem mi = new MenuItem(TitleTest);
             MenuItems[num] = mi;
             ItemCount++;
-
-            /*ItemCount++;
-            MenuItem mi = new MenuItem();
-            Title = TitleTest;
-            
-            MenuItems[num] = new MenuItem { };*/
         }
 
     }
