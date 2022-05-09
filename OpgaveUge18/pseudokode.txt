@@ -1,1 +1,38 @@
-﻿
+﻿Opret instance af Menu som hedder "mainMenu" med titlen "Min fantastiske menu"
+Loop start
+Kør metoden "AddMenuItem" som tager Titlen som parameter.
+	
+		AddMenuItem(Titlen)
+			Opret ny instance af MenuItem
+			Opret nyt object i menuItems med tallet af itemCount
+			Forøg itemCount med ét
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
