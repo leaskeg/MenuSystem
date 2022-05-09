@@ -1,11 +1,36 @@
 ﻿Opret instance af Menu som hedder "mainMenu" med titlen "Min fantastiske menu"
-Loop start
+
+		Menu()
+			string title
+			int ItemCount = 0
+			menuItem[10]
+
+			AddMenuItem(Titlen)
+				Opret ny instance af MenuItem
+				Opret nyt object i menuItems med tallet af itemCount
+				Forøg itemCount med ét
+
+			Show()
+				iterere igennem alle menu items. 
+				Viser dem på skærmen
+				Vi tager i mod input og sætter itemCount til det input. 
+				Renser skærmen
+
+			SelectMenuItem(int itemNum)
+				vi tager it input itemNum
+				hvis itemNum =< 0 så skal itemNum = 0
+				hvis itemNum => itemCount , så bliver itemNum = itemCount
+				så retunes itemNum
+			
+
+Loop1 start
 Kør metoden "AddMenuItem" som tager Titlen som parameter.
 	
-		AddMenuItem(Titlen)
-			Opret ny instance af MenuItem
-			Opret nyt object i menuItems med tallet af itemCount
-			Forøg itemCount med ét
+
+
+
+
+
 
 
 
